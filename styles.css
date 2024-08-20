@@ -104,16 +104,30 @@ main {
   flex: 1; /* This makes the main section take up all available space */
 }
 
-.qr-container img {
+.qr-container {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.qr-container {
+.qr-container img {
+  max-width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .qr-container img {
+      width: 80%; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .qr-container img {
+      width: 100%; /* Ensure image takes up full width on very small screens */
+  }
 }
 
 #qr-text {
