@@ -110,6 +110,19 @@ main {
   margin-right: auto;
 }
 
+.qr-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#qr-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin: 10px;
+}
 
 /* Footer styling */
 footer {
