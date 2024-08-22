@@ -5,6 +5,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* General body styling */
@@ -16,6 +18,7 @@ body {
   color: #444;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Header styling */
@@ -38,7 +41,6 @@ h2 {
   font-size: 1.5em;
   font-weight: 300;
 }
-
 /* Link styles */
 
 /* Default state of links */
@@ -102,6 +104,11 @@ nav ul li a:active {
 
 main {
   flex: 1; /* This makes the main section take up all available space */
+}
+
+img {
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .qr-container {
