@@ -14,20 +14,24 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
-  color: #444;
+  background-color: #F0E3C7; /* Sand Beige background */
+  color: #2D6A4F; /* Forest Green text color */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
 /* Header styling */
 header {
-  background-color: #007bff; /* Blue background */
-  color: #ffffff; /* White text */
+  background-color: #8A8D8F; /* Stone Gray background */
+  color: #F0E3C7; /* Sand Beige text color */
   text-align: center;
-  padding: 40px 0;
+  padding: 25px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -45,30 +49,35 @@ h2 {
 
 /* Default state of links */
 a {
-  color: #ffff;
+  color: #2D6A4F; /* Forest Green link color */
   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
   text-decoration: none;
 }
 
 /* Hover state of links */
 a:hover {
+  color: #D67D3D; /* Rich Rust on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
 /* Visited state of links */
 a:visited {
-  color: #ffff; 
+  color: #8A8D8F; /* Stone Gray for visited links */
 }
 
 /* Active state of links (when clicked) */
-a:active {
-  color: #003d7a;
-  text-decoration: underline; 
+a:active { 
+  color: #2D6A4F; /* Forest Green when clicked */
+  text-decoration: underline;
 }
 
 /* Navigation styling */
 nav {
-  background-color: #343a40; /* Dark gray background */
+  background-color: #2D6A4F; /* Forest Green background */
+  min-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0; /* Added padding to ensure proper spacing */
 }
 
 nav ul {
@@ -76,30 +85,32 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex; /* Make the list items align horizontally */
 }
 
 nav ul li {
-  display: inline;
+  margin: 0; /* Ensure no additional margin on list items */
 }
 
 nav ul li a {
   display: inline-block;
   padding: 15px 25px;
-  color: #ffffff; /* White text */
+  color: #F0E3C7; /* Sand Beige text color */
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  background-color: #2D6A4F; /* Sky Blue for nav items */
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #495057; /* Slightly lighter gray on hover */
-  color: #ffffff;
+  background-color: #D67D3D; /* Rich Rust on hover */
+  color: #F0E3C7; /* Sand Beige text color */
   text-decoration: underline;
 }
 
 /* Navigation link active state */
 nav ul li a:active {
-  color: #003d7a; 
+  color: #8A8D8F; /* Stone Gray when clicked */
 }
 
 main {
@@ -141,30 +152,31 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #2D6A4F;
   margin: 10px;
 }
 
 /* Footer styling */
 footer {
-  background: #ccc;
+  background: #8A8D8F; /* Stone Gray background */
   text-align: center;
   padding: 10px;
   margin-top: auto; /* Pushes the footer to the bottom */
+  max-width: 100%;
 }
 
 /* Footer link styles */
 footer a {
-  color: #000;
+  color: #D67D3D;
 }
 
 footer a:not(:first-of-type){
   color: #000;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid #D67D3D;
+  border-right: 2px solid #D67D3D;
   padding: 0 5px;
 }
 
 footer a:visited {
-  color: #176161;
+  color: #2D6A4F;
 }
