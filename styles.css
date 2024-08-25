@@ -56,7 +56,6 @@ a {
 
 /* Hover state of links */
 a:hover {
-  color: #D67D3D; /* Rich Rust on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -167,16 +166,18 @@ footer {
 
 /* Footer link styles */
 footer a {
-  color: #D67D3D;
+  color: #F0E3C7;
 }
 
-footer a:not(:first-of-type){
-  color: #000;
-  border-left: 2px solid #D67D3D;
-  border-right: 2px solid #D67D3D;
-  padding: 0 5px;
+footer a:not(:first-of-type) {
+  color: #F0E3C7; /* Rich Rust */
+  border-left: 2px solid #D67D3D; /* Rich Rust border */
+  border-right: 2px solid #D67D3D; /* Rich Rust border */
+  padding: 0px 5px;
+  display: inline-block;
+  max-width: 100%;
 }
 
 footer a:visited {
-  color: #2D6A4F;
+  color: #2D6A4F; /* Forest Green for visited links */
 }
