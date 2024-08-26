@@ -143,15 +143,15 @@ footer {
 
 /* Footer link styles */
 footer a:first-of-type {
-  color: #F8F4F1; /* Lighter text color */
+  color: #1F2A38; /* Lighter text color */
 }
 
 footer a:first-of-type:visited {
-  color: #E4FDE1; 
+  color: #582630; 
 }
 
 footer a:not(:first-of-type) {
-  color: #F8F4F1; /* Lighter text color */
+  color: #1F2A38; /* Lighter text color */
   border-left: 2px solid #1F2A38;
   border-right: 2px solid #1F2A38; 
   padding: 0px 5px;
@@ -160,7 +160,7 @@ footer a:not(:first-of-type) {
 }
 
 footer a:visited {
-  color: #E4FDE1;
+  color: #582630;
 }
 
 /* Image styling */
