@@ -147,20 +147,20 @@ footer a:first-of-type {
 }
 
 footer a:first-of-type:visited {
-  color: #113537; /* Darker color for visited footer links */
+  color: #E4FDE1; 
 }
 
 footer a:not(:first-of-type) {
   color: #F8F4F1; /* Lighter text color */
-  border-left: 2px solid #1F2A38; /* More contrasting border color */
-  border-right: 2px solid #1F2A38; /* More contrasting border color */
+  border-left: 2px solid #1F2A38;
+  border-right: 2px solid #1F2A38; 
   padding: 0px 5px;
   display: inline-block;
   max-width: 100%;
 }
 
 footer a:visited {
-  color: #113537;
+  color: #E4FDE1;
 }
 
 /* Image styling */
