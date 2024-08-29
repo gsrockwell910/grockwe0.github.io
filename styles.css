@@ -1,5 +1,16 @@
 /* styles/default.css */
 
+/* Color Scheme */
+:root {
+  --primary-color1: #9E9D80;
+  --primary-color2: #BF7F5A;
+  --primary-color3: #F8F4F1;
+  --primary-color4: #1F2A38;
+
+  --secondary-color1: #582630;
+  --secondary-color2: #FFD400;
+}
+
 /* Basic reset */
 html, body {
   margin: 0;
@@ -16,8 +27,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F8F4F1; /* Lighter background for better contrast */
-  color: #1F2A38; /* Darker text color for higher contrast */
+  background-color: var(--primary-color3); /* Lighter background for better contrast */
+  color: var(--primary-color4); /* Darker text color for higher contrast */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -29,8 +40,8 @@ body {
 
 /* Header styling */
 header {
-  background-color: #9E9D80; /* Slightly darker background for better contrast */
-  color: #1F2A38; /* Darker text color */
+  background-color: var(--primary-color1); /* Slightly darker background for better contrast */
+  color: var(--primary-color4);/* Darker text color */
   text-align: center;
   padding: 25px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better visibility */
@@ -55,7 +66,7 @@ h2 {
 
 /* Default state of links */
 a {
-  color: #1F2A38; /* Darker link color for better visibility */
+  color: var(--primary-color4); /* Darker link color for better visibility */
   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
   text-decoration: none;
 }
@@ -63,23 +74,22 @@ a {
 /* Hover state of links */
 a:hover {
   text-decoration: underline; /* Underline on hover */
-  color: #004E6F; /* Darker blue on hover for better contrast */
 }
 
 /* Visited state of links */
 a:visited {
-  color: #F8F4F1; /* Darker shade for visited links */
+  color: var(--primary-color3); /* Darker shade for visited links */
 }
 
 /* Active state of links (when clicked) */
 a:active {
-  color: #1F2A38; /* Darker color when clicked */
+  color: var(--primary-color4); /* Darker color when clicked */
   text-decoration: underline; 
 }
 
 /* Navigation styling */
 nav {
-  background-color: #1F2A38; /* Darker background color */
+  background-color: var(--primary-color4); /* Darker background color */
   min-width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -99,22 +109,22 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   padding: 15px 25px;
-  color: #F8F4F1; /* Lighter text color for better contrast */
+  color: var(--primary-color3); /* Lighter text color for better contrast */
   text-decoration: none;
   font-size: 1.2em;
-  background-color: #1F2A38; /* More vibrant background color for nav items */
+  background-color: var(--primary-color4); /* More vibrant background color for nav items */
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #BF7F5A; /* More contrasting hover background color */
-  color: #F8F4F1; /* Lighter text color on hover */
+  background-color: var(--primary-color2); /* More contrasting hover background color */
+  color: var(--primary-color3); /* Lighter text color on hover */
   text-decoration: underline;
 }
 
 /* Navigation link active state */
 nav ul li a:active {
-  color: #9E9D80; /* Darker color when clicked */
+  color: var(--primary-color1); /* Darker color when clicked */
 }
 
 main {
@@ -130,16 +140,16 @@ main {
 p {
   font-size: 1.1em; 
   line-height: 1.2em; 
-  color: #F8F4F1; /* Lighter text color */
+  color: var(--primary-color3); /* Lighter text color */
   border-radius: 10px;
   padding: 20px;
   max-width: 55vw; 
-  background-color: #1F2A38; /* Darker background color for better contrast */
+  background-color: var(--primary-color4);; /* Darker background color for better contrast */
 }
 
 /* Footer styling */
 footer {
-  background: #9E9D80; /* Slightly darker background color */
+  background: var(--primary-color1);
   text-align: center;
   padding: 10px;
   margin-top: auto; /* Pushes the footer to the bottom */
@@ -148,24 +158,24 @@ footer {
 
 /* Footer link styles */
 footer a:first-of-type {
-  color: #1F2A38; /* Lighter text color */
+  color: var(--primary-color4); /* Lighter text color */
 }
 
 footer a:first-of-type:visited {
-  color: #582630; 
+  color: var(--secondary-color1); 
 }
 
 footer a:not(:first-of-type) {
-  color: #1F2A38; /* Lighter text color */
-  border-left: 2px solid #1F2A38;
-  border-right: 2px solid #1F2A38; 
+  color: var(--primary-color4); /* Lighter text color */
+  border-left: 2px solid var(--primary-color4);
+  border-right: 2px solid var(--primary-color4); 
   padding: 0px 5px;
   display: inline-block;
   max-width: 100%;
 }
 
 footer a:visited {
-  color: #582630;
+  color: var(--secondary-color1);
 }
 
 /* Image styling */
@@ -203,6 +213,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1F2A38;
+  color: var(--primary-color4);
   margin: 10px;
 }
