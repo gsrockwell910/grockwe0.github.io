@@ -184,12 +184,14 @@ img {
   margin: 20px;
 }
 
-.qr-container {
+figure {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-height: 85%;
 }
 
-.qr-container img {
+figure > img {
   max-width: 100%;
   height: auto;
   display: flex;
@@ -198,21 +200,18 @@ img {
 }
 
 @media (max-width: 768px) {
-  .qr-container img {
+  figure > img {
       width: 80%; /* Adjust size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .qr-container img {
+  figure > img {
       width: 100%; /* Ensure image takes up full width on very small screens */
   }
 }
 
-#qr-text {
+figcaption {
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--primary-color4);
-  margin: 10px;
 }
